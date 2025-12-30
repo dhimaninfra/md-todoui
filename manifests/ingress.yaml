@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: todo-ingress
+  labels:
+    app.kubernetes.io/name: todo-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: ui.dhimaninfra.online
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: todo-ui
+            port: 
+              number: 80
