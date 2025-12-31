@@ -6,7 +6,7 @@ import { Box } from '@mui/material';
 import config from './config'; // Import the config file with environment variable support
 
 // Use the config to define API URLs
-const GET_TASKS_API_BASE_URL = "http://gettasks-api.dhimaninfra.online/";
+const GET_TASKS_API_BASE_URL = "http://gettask-api.dhimaninfra.online/";
 const DELETE_TASK_API_BASE_URL = "http://deletetask-api.dhimaninfra.online/";
 const CREATE_TASK_API_BASE_URL = "http://addtask-api.dhimaninfra.online/";
 
